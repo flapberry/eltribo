@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+	@apply font-pRegular
+}
+
+input[type='checkbox'] {
+	/* appearance: none; */
+}
+
+li{
+	list-style: none;
+}
+
+input, textarea {
+	outline: none;
+}
+
+input {
+  -moz-appearance: textfield; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;  
+  margin: 0;
+}
+
+.FRowC {
+	@apply flex justify-center items-center
+}
+
+.FCol {
+	@apply flex flex-col 
+}
+
+.FColC {
+	@apply flex flex-col justify-center items-center
+}
+
+.evenPadding {
+	@apply px-[1rem] py-[2rem]
+}
+
+.Filters{
+	@apply p-3 px-4 hover:text-[#6ed4e5] hover:bg-[#f3fbfc]
+}
+
+.hvrPointer {
+	@apply hover:cursor-pointer select-none
+}
+
+.FullCover {
+	@apply top-0 right-0 bottom-0 left-0
+}
+
+.InpEnq {
+	@apply rounded-xl border-[1px] border-greenB py-3 px-4
+}
+
+.InpEnq2 {
+	@apply py-3 px-4 flex gap-2
+}
+
+.absoluteC {
+	@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  
+}
+
+.gra1{
+	background: linear-gradient(to right, #B0EDDD, #B3EFF4, #BFF1DE);
+}
+
+.gra2{
+	background: linear-gradient(to right, #FFFFFF, #1A5319, #1D1B20, #322F35, #6DD9C1, #ACECD7);
+}
+
+.inpContact {
+	@apply border-[1px] rounded-2xl p-3 border-greenB w-[22rem] 
+}
